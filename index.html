@@ -1,146 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Documentación del Proyecto</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            background: #f4f6f9;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>Documentación GitHub Pages</title>
 
-        header {
-            background: linear-gradient(135deg, #4a90e2, #0077cc);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+    }
 
-        nav {
-            background: #222;
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-        }
+    header {
+        background: linear-gradient(90deg, #2563eb, #7c3aed);
+        padding: 2rem;
+        text-align: center;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    nav {
+        background: #1e293b;
+        padding: 1rem;
+        text-align: center;
+    }
 
-        nav a:hover {
-            color: #4a90e2;
-        }
+    nav a {
+        color: #e2e8f0;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-        .container {
-            display: flex;
-            margin: 20px;
-        }
+    nav a:hover {
+        color: #38bdf8;
+    }
 
-        aside {
-            width: 25%;
-            background: white;
-            padding: 1rem;
-            border-radius: 10px;
-            margin-right: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+    .container {
+        display: flex;
+        padding: 20px;
+    }
 
-        main {
-            width: 75%;
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+    aside {
+        width: 25%;
+        background: #1e293b;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
 
-        section {
-            margin-bottom: 2rem;
-        }
+    main {
+        width: 75%;
+    }
 
-        h2 {
-            border-left: 5px solid #4a90e2;
-            padding-left: 10px;
-        }
+    section {
+        background: #1e293b;
+        padding: 1.5rem;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border-left: 5px solid #38bdf8;
+    }
 
-        code {
-            background: #eee;
-            padding: 3px 6px;
-            border-radius: 5px;
-        }
+    h2 {
+        color: #38bdf8;
+    }
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #222;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+    code {
+        background: black;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background: #020617;
+    }
+</style>
+
 </head>
+
 <body>
 
 <header>
-    <h1>Documentación del Proyecto</h1>
-    <p>Guía completa para entender y usar la aplicación</p>
+    <h1>Documentación: GitHub Pages</h1>
+    <p>Guía completa para crear y publicar una página web estática</p>
 </header>
 
 <nav>
     <a href="#intro">Introducción</a>
-    <a href="#instalacion">Instalación</a>
-    <a href="#uso">Uso</a>
-    <a href="#api">API</a>
+    <a href="#repositorio">Repositorio</a>
+    <a href="#archivos">Archivos</a>
+    <a href="#configuracion">Configuración</a>
+    <a href="#publicacion">Publicación</a>
 </nav>
 
 <div class="container">
 
-    <aside>
-        <h3>📑 Contenido</h3>
-        <ul>
-            <li><a href="#intro">Introducción</a></li>
-            <li><a href="#instalacion">Instalación</a></li>
-            <li><a href="#uso">Uso</a></li>
-            <li><a href="#api">API</a></li>
-        </ul>
-    </aside>
+<aside>
+    <h3>Índice</h3>
+    <ul>
+        <li><a href="#intro">¿Qué es GitHub Pages?</a></li>
+        <li><a href="#repositorio">Crear repositorio</a></li>
+        <li><a href="#archivos">Subir archivos</a></li>
+        <li><a href="#configuracion">Configurar publicación</a></li>
+        <li><a href="#publicacion">Resultado final</a></li>
+    </ul>
+</aside>
 
-    <main>
+<main>
 
-        <section id="intro">
-            <h2>Introducción</h2>
-            <p>Este proyecto es una aplicación diseñada para facilitar la gestión de tareas.</p>
-        </section>
+<section id="intro">
+    <h2>¿Qué es GitHub Pages?</h2>
+    <p>
+        GitHub Pages es un servicio que permite alojar páginas web estáticas directamente desde un repositorio de GitHub.
+    </p>
+    <p>
+        Esto significa que puedes publicar una web sin necesidad de servidor propio, ya que GitHub se encarga de mostrar los archivos HTML, CSS y JavaScript en Internet.
+    </p>
+    <p>
+        Este servicio se utiliza habitualmente para crear documentación, portafolios o páginas de proyectos. :contentReference[oaicite:0]{index=0}
+    </p>
+</section>
 
-        <section id="instalacion">
-            <h2>Instalación</h2>
-            <p>Sigue estos pasos para instalar:</p>
-            <ol>
-                <li>Clona el repositorio</li>
-                <li>Abre el archivo <code>index.html</code></li>
-            </ol>
-        </section>
+<section id="repositorio">
+    <h2>1. Crear un repositorio</h2>
+    <p>
+        El primer paso consiste en crear un repositorio en GitHub. Este repositorio contendrá todos los archivos de la página web.
+    </p>
+    <p>
+        GitHub Pages permite usar tanto repositorios nuevos como existentes para publicar un sitio web. :contentReference[oaicite:1]{index=1}
+    </p>
+    <p>
+        El nombre del repositorio puede ser cualquiera si se trata de un proyecto, aunque también existe la opción de usar un nombre especial para páginas personales.
+    </p>
+</section>
 
-        <section id="uso">
-            <h2>Uso</h2>
-            <p>Una vez abierto, podrás navegar por la documentación usando el menú superior.</p>
-        </section>
+<section id="archivos">
+    <h2>2. Subir los archivos de la web</h2>
+    <p>
+        Una vez creado el repositorio, es necesario subir los archivos de la página web. Estos pueden ser archivos HTML, CSS y JavaScript.
+    </p>
+    <p>
+        GitHub Pages buscará automáticamente un archivo principal llamado:
+    </p>
+    <code>index.html</code>
+    <p>
+        También puede usar <code>index.md</code> o <code>README.md</code>, que serán procesados como contenido web. :contentReference[oaicite:2]{index=2}
+    </p>
+</section>
 
-        <section id="api">
-            <h2>API</h2>
-            <p>Ejemplo de endpoint:</p>
-            <code>GET /api/tareas</code>
-        </section>
+<section id="configuracion">
+    <h2>3. Configurar la publicación</h2>
+    <p>
+        Para que la página sea visible en Internet, es necesario configurar la fuente de publicación.
+    </p>
+    <p>
+        GitHub permite elegir una rama (por ejemplo <code>main</code>) y una carpeta desde donde se publicará la web. :contentReference[oaicite:3]{index=3}
+    </p>
+    <ol>
+        <li>Ir a Settings del repositorio</li>
+        <li>Entrar en la sección Pages</li>
+        <li>Seleccionar la rama de publicación</li>
+        <li>Guardar los cambios</li>
+    </ol>
+</section>
 
-    </main>
+<section id="publicacion">
+    <h2>4. Publicación y acceso</h2>
+    <p>
+        Una vez configurado, GitHub genera automáticamente el sitio web y lo publica en Internet.
+    </p>
+    <p>
+        La dirección de la página dependerá del tipo de repositorio:
+    </p>
+    <code>https://usuario.github.io/repositorio</code>
+    <p>
+        La publicación puede tardar unos minutos en completarse después de subir los cambios. :contentReference[oaicite:4]{index=4}
+    </p>
+    <p>
+        Cada vez que se actualicen los archivos del repositorio, la página web se actualizará automáticamente.
+    </p>
+</section>
+
+</main>
 
 </div>
 
 <footer>
-    <p>© 2026 - Documentación del Proyecto</p>
+    <p>💻 Práctica U.D. 03 - Lenguaje de Marcas</p>
 </footer>
 
 </body>
